@@ -1,0 +1,27 @@
+{
+  "name": "-backend_assignment",
+  "version": "1.0.0",
+  "description": "basic test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargoDev/-Backend_Assignment.git"
+  },
+  "keywords": [
+    "MargzIbz",
+    "Developer"
+  ],
+  "author": "Mariano A. Gómez Ibáñez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MargoDev/-Backend_Assignment/issues"
+  },
+  "homepage": "https://github.com/MargoDev/-Backend_Assignment#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
