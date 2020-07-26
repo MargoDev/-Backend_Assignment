@@ -7,7 +7,7 @@ router.get('/backend/balance/:account', (req, res) => {
     let query = `
         call getBalance(?);`
     dbConnection.query(query, [account], (err, rows, fields) => {
-        processResponse(err, rows, res);
+        processResponse(err, rows[0], res);
     });
 });
 
@@ -36,9 +36,8 @@ router.get('/backend/history/:account', (req, res) => {
 });
 
 router.post('/backend/transfer', (req, res)=>{
-    const {fromAccount, toAccount, amount} = req.body;
-    
-    const query = `CALL transfers(?, ?, ?);`;
+    let {fromAccount, toAccount, amount} = req.body;
+    let query = `CALL transfers(?, ?, ?);`;
     dbConnection.query(query, [fromAccount,toAccount,amount], (err, rows, fields) => {
         processResponse(err, rows, res);
     });
