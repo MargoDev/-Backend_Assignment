@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const dbConnection = require('../db');
 
-router.get('/', (req, res) => {res.redirect('https://app.swaggerhub.com/apis-docs/MargoDev/BackendDevTest/1.0')});
+router.get('/', (req, res) => {res.redirect('https://app.swaggerhub.com/apis-docs/MargoDev/TestBackendDev/1.0')});
 
 router.get('/backend/balance/:account', (req, res) => {
     try {
