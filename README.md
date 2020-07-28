@@ -3,7 +3,7 @@ Digital Hub - Backend Assignment - CP
 Example develpment by Mariano Arturo Gómez Ibánez
  
 first install npm modules
-#npm install
+# npm install
 
  if you want use DB local please use files into dir SchemaMarGzIbz
  and change file db.js 
