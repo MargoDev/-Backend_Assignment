@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/MargoDev/-Backend_Assignment#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mysql": "^2.18.1"
   }
 }
